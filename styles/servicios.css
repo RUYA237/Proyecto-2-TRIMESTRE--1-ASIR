@@ -1,0 +1,306 @@
+/* ================================
+   SERVICIOS.CSS
+   Estilos exclusivos de servicios.html
+   ================================ */
+
+/* ---- INTRO SERVICIOS ---- */
+/* Estructura principal: GRID */
+
+.servicios-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 2rem;
+}
+
+.servicios-intro h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.servicios-intro h1 span {
+    color: var(--cyan);
+}
+
+.servicios-intro p {
+    color: var(--texto-p);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+/* Mini tarjetas columna derecha — FLEX column */
+
+.mini-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.mini-carta {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.1rem 1.25rem;
+    transition: border-color 0.2s;
+}
+
+.mini-carta:hover {
+    border-color: var(--cyan);
+}
+
+.mini-icono {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 0.1rem;
+}
+
+.mini-carta h4 {
+    font-size: 0.92rem;
+    color: var(--blanco);
+    margin-bottom: 0.2rem;
+}
+
+.mini-carta p {
+    font-size: 0.8rem;
+    color: var(--texto-p);
+    line-height: 1.5;
+}
+
+/* ---- CATÁLOGO COMPLETO ---- */
+/* Estructura: GRID */
+
+.catalogo-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+}
+
+.seccion-cabecera {
+    margin-bottom: 2rem;
+}
+
+.seccion-cabecera h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.seccion-cabecera p {
+    color: var(--texto-p);
+    max-width: 580px;
+    font-size: 0.95rem;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.servicio-carta {
+    background-color: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 2rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.servicio-carta:hover {
+    border-color: var(--cyan);
+    transform: translateY(-3px);
+}
+
+.servicio-carta.destacado {
+    border-color: var(--cyan);
+}
+
+.servicio-num {
+    font-size: 0.72rem;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.servicio-carta h3 {
+    font-size: 1.25rem;
+    color: var(--blanco);
+    margin-bottom: 0.75rem;
+}
+
+.servicio-carta p {
+    color: var(--texto-p);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.servicio-lista {
+    list-style: none;
+    border-top: 1px solid var(--borde);
+    padding-top: 1rem;
+}
+
+.servicio-lista li {
+    font-size: 0.85rem;
+    color: var(--texto-p);
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--borde);
+}
+
+.servicio-lista li:last-child {
+    border-bottom: none;
+}
+
+.servicio-lista li::before {
+    content: '→ ';
+    color: var(--cyan);
+}
+
+/* ---- PROCESO ---- */
+/* Estructura: FLEX */
+
+.proceso-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 0;
+}
+
+.proceso-section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.proceso-section > p {
+    color: var(--texto-p);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.proceso-flex {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.paso {
+    background-color: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 150px;
+    transition: border-color 0.2s;
+}
+
+.paso:hover {
+    border-color: var(--cyan);
+}
+
+.paso-num {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--borde);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+}
+
+.paso h4 {
+    font-size: 0.95rem;
+    color: var(--blanco);
+    margin-bottom: 0.4rem;
+}
+
+.paso p {
+    font-size: 0.82rem;
+    color: var(--texto-p);
+    line-height: 1.55;
+}
+
+/* ---- TECNOLOGÍAS ---- */
+/* Estructura: FLEX wrap */
+
+.tech-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 0;
+}
+
+.tech-section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.tech-chip {
+    background-color: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    font-size: 0.82rem;
+    color: var(--texto-p);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.tech-chip:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+/* ---- CTA ---- */
+
+.servicios-cta {
+    padding: 3rem 2rem 0;
+}
+
+/* ================================
+   MEDIA QUERIES SERVICIOS
+   ================================ */
+
+@media (max-width: 900px) {
+    .servicios-intro {
+        grid-template-columns: 1fr;
+        padding: 2.5rem 1.5rem 2rem;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo-section,
+    .proceso-section,
+    .tech-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .servicios-intro h1 {
+        font-size: 2rem;
+    }
+
+    .proceso-flex {
+        flex-direction: column;
+    }
+
+    .servicios-cta {
+        padding: 2rem 1rem 0;
+    }
+}

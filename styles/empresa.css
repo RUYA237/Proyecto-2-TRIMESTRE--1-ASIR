@@ -1,0 +1,348 @@
+/* ================================
+   EMPRESA.CSS
+   Estilos exclusivos de empresa.html
+   ================================ */
+
+/* ---- HERO EMPRESA ---- */
+/* Estructura principal: GRID */
+
+.empresa-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 2rem;
+}
+
+.empresa-hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.empresa-hero h1 span {
+    color: var(--cyan);
+}
+
+.empresa-hero p {
+    color: var(--texto-p);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.empresa-hero .btn {
+    margin-top: 0.5rem;
+}
+
+/* Stats grid — GRID 2x2 */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.stat-carta {
+    background-color: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.5rem;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+.stat-carta:hover {
+    border-color: var(--cyan);
+}
+
+.stat-num {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--cyan);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.stat-lbl {
+    font-size: 0.82rem;
+    color: var(--texto-p);
+}
+
+/* ---- MISIÓN Y VALORES ---- */
+/* Estructura: GRID */
+
+.mision-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+.mision-section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.mision-section h2 span {
+    color: var(--cyan);
+}
+
+.mision-section p {
+    color: var(--texto-p);
+    line-height: 1.75;
+    margin-bottom: 0.9rem;
+}
+
+/* Valores grid 2x3 */
+
+.valores-wrap h3 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--cyan);
+    margin-bottom: 1rem;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+}
+
+.valor-carta {
+    background-color: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.25rem;
+    transition: border-color 0.2s;
+}
+
+.valor-carta:hover {
+    border-color: var(--cyan);
+}
+
+.valor-icono {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.valor-carta h4 {
+    font-size: 0.95rem;
+    color: var(--blanco);
+    margin-bottom: 0.3rem;
+}
+
+.valor-carta p {
+    font-size: 0.82rem;
+    color: var(--texto-p);
+    margin-bottom: 0;
+    line-height: 1.55;
+}
+
+/* ---- EQUIPO ---- */
+/* Estructura: GRID */
+
+.equipo-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 0;
+}
+
+.equipo-section .seccion-cabecera {
+    margin-bottom: 2rem;
+}
+
+.equipo-section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.equipo-section > p {
+    color: var(--texto-p);
+    max-width: 560px;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.miembro-carta {
+    background-color: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.miembro-carta:hover {
+    border-color: var(--cyan);
+    transform: translateY(-3px);
+}
+
+.miembro-avatar {
+    background-color: var(--fondo);
+    padding: 2rem 0;
+    font-size: 3.2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--borde);
+}
+
+.miembro-info {
+    padding: 1.15rem;
+}
+
+.miembro-info h3 {
+    font-size: 0.95rem;
+    color: var(--blanco);
+    margin-bottom: 0.2rem;
+}
+
+.miembro-cargo {
+    font-size: 0.75rem;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: 0.55rem;
+    display: block;
+}
+
+.miembro-info p {
+    font-size: 0.82rem;
+    color: var(--texto-p);
+    line-height: 1.5;
+}
+
+/* ---- HISTORIA / TIMELINE ---- */
+/* Estructura: FLEX column */
+
+.historia-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 0;
+}
+
+.historia-section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid var(--borde);
+    padding-left: 1.75rem;
+    gap: 0;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--borde);
+    position: relative;
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.1rem;
+    top: 1.4rem;
+    width: 10px;
+    height: 10px;
+    background-color: var(--cyan);
+    border-radius: 50%;
+}
+
+.timeline-anio {
+    font-size: 0.78rem;
+    color: var(--cyan);
+    font-weight: 700;
+    min-width: 42px;
+    padding-top: 0.15rem;
+}
+
+.timeline-item h4 {
+    font-size: 0.95rem;
+    color: var(--blanco);
+    margin-bottom: 0.25rem;
+}
+
+.timeline-item p {
+    font-size: 0.85rem;
+    color: var(--texto-p);
+    line-height: 1.6;
+}
+
+/* ---- BANNER CTA ---- */
+
+.empresa-cta {
+    padding: 3rem 2rem 0;
+}
+
+/* ================================
+   MEDIA QUERIES EMPRESA
+   ================================ */
+
+@media (max-width: 900px) {
+    .empresa-hero {
+        grid-template-columns: 1fr;
+        padding: 2.5rem 1.5rem 2rem;
+    }
+
+    .mision-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1.5rem 0;
+    }
+
+    .equipo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .equipo-section {
+        padding: 2.5rem 1.5rem 0;
+    }
+
+    .historia-section {
+        padding: 2.5rem 1.5rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .empresa-hero h1 {
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .empresa-cta {
+        padding: 2rem 1rem 0;
+    }
+}
