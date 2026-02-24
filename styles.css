@@ -46,13 +46,9 @@ header nav {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--blanco);
-}
-
-.logo span {
-    color: var(--cyan);
 }
 
 nav ul {
@@ -63,9 +59,6 @@ nav ul {
 nav ul li a {
     color: var(--texto-p);
     padding: 0.45rem 1rem;
-    border-radius: var(--radio);
-    font-weight: 500;
-    transition: color 0.2s, background 0.2s;
 }
 
 /* Footer.*/
@@ -85,23 +78,14 @@ footer {
     margin: 0 auto 2rem;
 }
 
-.footer-marca .logo {
-    font-size: 1.3rem;
-    display: block;
-    margin-bottom: 0.75rem;
-}
-
 .footer-marca p {
     color: var(--texto-p);
     font-size: 0.875rem;
-    line-height: 1.7;
-    max-width: 230px;
+    max-width: 200px;
 }
 
 .footer-1 h4 {
     font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
     color: var(--texto-p);
     margin-bottom: 1rem;
 }
@@ -118,7 +102,6 @@ footer {
 
 .footer-1 ul li a:hover {
     color: var(--cyan);
-    text-decoration: none;
 }
 
 .footer-copyright {
@@ -151,22 +134,10 @@ footer {
     color: var(--fondo);
 }
 
-.btn-consulta:hover {
-    background-color: #00ffca;
-    color: var(--fondo);
-    text-decoration: none;
-}
-
 .btn-servicios {
     background-color: transparent;
     color: var(--cyan);
     border: 2px solid var(--cyan);
-}
-
-.btn-servicios:hover {
-    background-color: rgba(0, 229, 176, 0.1);
-    color: var(--cyan);
-    text-decoration: none;
 }
 
 /* Hero.*/
