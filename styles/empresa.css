@@ -1,10 +1,6 @@
-/* ================================
-   EMPRESA.CSS
-   Estilos exclusivos de empresa.html
-   ================================ */
-
-/* ---- HERO EMPRESA ---- */
-/* Estructura principal: GRID */
+.cyan {
+    color: var(--cyan);
+}
 
 .empresa-hero {
     display: grid;
@@ -23,10 +19,6 @@
     margin-bottom: 1rem;
 }
 
-.empresa-hero h1 span {
-    color: var(--cyan);
-}
-
 .empresa-hero p {
     color: var(--texto-p);
     font-size: 1rem;
@@ -38,7 +30,7 @@
     margin-top: 0.5rem;
 }
 
-/* Stats grid — GRID 2x2 */
+/* Main-grid-stats.*/
 
 .stats-grid {
     display: grid;
@@ -52,7 +44,6 @@
     border-radius: var(--radio);
     padding: 1.5rem;
     text-align: center;
-    transition: border-color 0.2s;
 }
 
 .stat-carta:hover {
@@ -64,7 +55,6 @@
     font-weight: 700;
     color: var(--cyan);
     display: block;
-    line-height: 1;
     margin-bottom: 0.4rem;
 }
 
@@ -103,15 +93,6 @@
 }
 
 /* Valores grid 2x3 */
-
-.valores-wrap h3 {
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--cyan);
-    margin-bottom: 1rem;
-}
-
 .valores-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
