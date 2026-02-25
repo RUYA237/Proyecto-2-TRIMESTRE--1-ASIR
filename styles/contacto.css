@@ -1,10 +1,3 @@
-/* ================================
-   CONTACTO.CSS
-   Estilos exclusivos de contacto.html
-   ================================ */
-
-/* ---- ENCABEZADO PÁGINA ---- */
-
 .contacto-header {
     max-width: 1100px;
     margin: 0 auto;
@@ -14,36 +7,23 @@
 .contacto-header h1 {
     font-size: 2.6rem;
     font-weight: 700;
-    line-height: 1.15;
     margin-bottom: 0.75rem;
-}
-
-.contacto-header h1 span {
-    color: var(--cyan);
 }
 
 .contacto-header p {
     color: var(--texto-p);
     font-size: 1rem;
     max-width: 540px;
-    line-height: 1.75;
 }
 
-/* ---- LAYOUT PRINCIPAL ---- */
-/* Estructura: GRID */
-
 .contacto-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.35fr;
     gap: 2.5rem;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 2rem;
-    align-items: start;
 }
 
-/* ---- COLUMNA IZQUIERDA: INFO ---- */
-/* Estructura interna: FLEX column */
+/* Info.*/
 
 .contacto-info {
     display: flex;
@@ -53,17 +33,12 @@
 
 .info-item {
     display: flex;
-    align-items: flex-start;
     gap: 1rem;
     background-color: var(--tarjeta);
     border: 1px solid var(--borde);
     border-radius: var(--radio);
     padding: 1.1rem 1.25rem;
-    transition: border-color 0.2s;
-}
-
-.info-item:hover {
-    border-color: var(--cyan);
+    margin-bottom: 0.5rem;
 }
 
 .info-icono {
@@ -74,7 +49,6 @@
 
 .info-item h4 {
     font-size: 0.74rem;
-    text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--cyan);
     font-weight: 600;
@@ -87,207 +61,59 @@
     line-height: 1.5;
 }
 
-/* ---- SEDES ---- */
-/* Estructura: FLEX column */
+/* Nuestras oficinas.*/
 
 .sedes-section {
-    margin-top: 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .sedes-section h3 {
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--texto-p);
-    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: var(--cyan);
+    margin-bottom: 1rem;
 }
 
 .sedes-flex {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 1rem;
 }
 
 .sede {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: var(--tarjeta);
     border: 1px solid var(--borde);
     border-radius: var(--radio);
     padding: 0.85rem 1.1rem;
-    transition: border-color 0.2s;
-}
-
-.sede:hover {
-    border-color: var(--cyan);
-}
-
-.sede-info h5 {
-    font-size: 0.88rem;
-    color: var(--blanco);
-    font-weight: 600;
-    margin-bottom: 0.1rem;
 }
 
 .sede-info p {
-    font-size: 0.76rem;
+    font-size: 0.8rem;
     color: var(--texto-p);
 }
 
-.sede-badge {
-    font-size: 0.68rem;
-    font-weight: 700;
-    color: var(--cyan);
-    border: 1px solid var(--cyan);
-    padding: 0.15em 0.6em;
-    border-radius: 999px;
-    white-space: nowrap;
-}
-
-/* ---- FORMULARIO ---- */
-/* Estructura: FLEX column internamente */
-
-.form-bloque {
-    background-color: var(--tarjeta);
-    border: 1px solid var(--borde);
-    border-radius: var(--radio);
-    padding: 2rem;
-}
-
-.form-bloque h2 {
-    font-size: 1.4rem;
-    margin-bottom: 0.4rem;
-}
-
-.form-bloque > p {
-    color: var(--texto-p);
-    font-size: 0.875rem;
-    margin-bottom: 1.75rem;
-    line-height: 1.6;
-}
-
-.form-fila {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.campo {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    margin-bottom: 1rem;
-}
-
-.campo label {
-    font-size: 0.76rem;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    color: var(--texto-p);
-    font-weight: 600;
-}
-
-.campo input,
-.campo textarea,
-.campo select {
-    background-color: var(--fondo);
-    border: 1px solid var(--borde);
-    border-radius: 8px;
-    padding: 0.7rem 1rem;
-    color: var(--blanco);
-    font-size: 0.9rem;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    width: 100%;
-    transition: border-color 0.2s;
-}
-
-.campo input:focus,
-.campo textarea:focus,
-.campo select:focus {
-    outline: none;
-    border-color: var(--cyan);
-}
-
-.campo input::placeholder,
-.campo textarea::placeholder {
-    color: var(--texto-p);
-    opacity: 0.6;
-}
-
-.campo textarea {
-    resize: vertical;
-    min-height: 110px;
-}
-
-.campo select {
-    cursor: pointer;
-    appearance: none;
-}
-
-.campo-check {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
-    margin-bottom: 1.25rem;
-}
-
-.campo-check input[type="checkbox"] {
-    width: auto;
-    margin-top: 3px;
-    flex-shrink: 0;
-    accent-color: var(--cyan);
-}
-
-.campo-check span {
-    font-size: 0.82rem;
-    color: var(--texto-p);
-    line-height: 1.5;
-}
-
-.campo-check a {
-    color: var(--cyan);
-}
-
-.btn-form {
-    width: 100%;
-    padding: 0.85rem;
-    font-size: 0.95rem;
-    justify-content: center;
-    text-align: center;
-}
-
-.form-nota {
-    text-align: center;
-    font-size: 0.76rem;
-    color: var(--texto-p);
-    margin-top: 0.85rem;
-}
-
-/* ---- HORARIOS ---- */
-/* Estructura: FLEX wrap */
-
+/* Horarios.*/
 .horarios-section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .horarios-section h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-.horarios-section > p {
+.horarios-section p {
     color: var(--texto-p);
-    margin-bottom: 1.75rem;
+    margin-bottom: 2rem;
     font-size: 0.95rem;
 }
 
 .horarios-flex {
     display: flex;
-    gap: 1.25rem;
-    flex-wrap: wrap;
+    gap: 2.5rem;
 }
 
 .horario-carta {
@@ -295,144 +121,59 @@
     border: 1px solid var(--borde);
     border-radius: var(--radio);
     padding: 1.5rem;
-    flex: 1;
-    min-width: 200px;
-    transition: border-color 0.2s;
 }
 
-.horario-carta:hover {
-    border-color: var(--cyan);
-}
-
-.horario-carta h4 {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--cyan);
-    font-weight: 600;
-    margin-bottom: 0.9rem;
-}
-
-.horario-fila {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.84rem;
-    padding: 0.35rem 0;
-    border-bottom: 1px solid var(--borde);
-    color: var(--texto-p);
-}
-
-.horario-fila:last-child {
-    border-bottom: none;
-}
-
-/* ---- MAPA ---- */
-/* Estructura: FLEX centrado */
-
+/* Mapa.*/
 .mapa-section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 }
 
-.mapa-section h2 {
-    font-size: 1.9rem;
-    margin-bottom: 1.25rem;
+.mapa-section span {
+    color: var(--cyan);
+    font-size: 1rem;
+    font-weight: 900;
 }
 
-.mapa-placeholder {
-    background-color: var(--tarjeta);
-    border: 1px solid var(--borde);
-    border-radius: var(--radio);
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    position: relative;
-    overflow: hidden;
+/* Faq.*/
+.preguntas-section span {
+    color: var(--cyan);
+    font-size: 1rem;
+    font-weight: 900;
 }
 
-/* Cuadrícula decorativa del mapa */
-.mapa-placeholder::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-        linear-gradient(var(--borde) 1px, transparent 1px),
-        linear-gradient(90deg, var(--borde) 1px, transparent 1px);
-    background-size: 40px 40px;
-    opacity: 0.5;
-}
-
-.mapa-pin {
-    font-size: 2.5rem;
-    position: relative;
-    z-index: 1;
-}
-
-.mapa-label {
-    font-size: 0.82rem;
-    color: var(--texto-p);
-    position: relative;
-    z-index: 1;
-}
-
-/* ---- FAQ ---- */
-/* Estructura: GRID */
-
-.faq-section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 2rem 0;
-}
-
-.faq-section h2 {
-    font-size: 1.9rem;
+.preguntas-section h2 {
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-.faq-section > p {
+.preguntas-section p {
     color: var(--texto-p);
-    margin-bottom: 2rem;
-    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
-.faq-grid {
+.preguntas-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
 }
 
-.faq-carta {
+.preguntas-carta {
     background-color: var(--tarjeta);
     border: 1px solid var(--borde);
     border-radius: var(--radio);
     padding: 1.5rem;
-    transition: border-color 0.2s;
 }
 
-.faq-carta:hover {
-    border-color: var(--cyan);
-}
-
-.faq-carta h4 {
-    font-size: 0.95rem;
-    color: var(--blanco);
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
-}
-
-.faq-carta p {
-    font-size: 0.875rem;
+.preguntas-carta p {
+    font-size: 0.8rem;
     color: var(--texto-p);
     line-height: 1.65;
+    margin-top: 1rem;
 }
 
-/* ================================
-   MEDIA QUERIES CONTACTO
-   ================================ */
+/* Media queries.*/
 
 @media (max-width: 900px) {
     .contacto-grid {

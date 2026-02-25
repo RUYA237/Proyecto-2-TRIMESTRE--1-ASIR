@@ -9,10 +9,10 @@
 </head>
 <body>
 
-    <!-- HEADER -->
+<!-- Header.-->
     <header>
         <nav>
-            <a href="../index.html" class="logo">Geo's<span>.</span>Corp</a>
+            <a href="../index.html" class="logo">Geo's<span class="cyan">.</span>Corp</a>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="empresa.html">Empresa</a></li>
@@ -22,173 +22,84 @@
         </nav>
     </header>
 
-    <!-- MAIN -->
+<!-- Contáctanos.-->
     <main>
-
-        <!-- ENCABEZADO -->
         <div class="contacto-header">
-            <span class="etiqueta">// Contáctanos</span>
-            <h1>Hablemos de tu próximo <span>proyecto</span></h1>
+            <span class="etiqueta">// CONTÁCTANOS</span>
+            <h1>Hablemos de tu próximo <span class="cyan">proyecto</span></h1>
             <p>Nuestro equipo de expertos está listo para escuchar tus necesidades y ofrecerte una solución personalizada. Sin compromisos, sin letra pequeña.</p>
         </div>
 
-        <!-- LAYOUT PRINCIPAL — GRID -->
         <div class="contacto-grid">
 
-            <!-- COLUMNA IZQUIERDA: Información -->
-            <aside>
 
-                <!-- Info de contacto — FLEX column -->
+
+<!-- Info.-->
                 <div class="contacto-info">
                     <div class="info-item">
                         <div class="info-icono">📍</div>
                         <div>
-                            <h4>Sede central</h4>
+                            <h4>SEDE CENTRAL</h4>
                             <p>C/ Innovación Tecnológica, 42<br>28045 Madrid, España</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icono">📞</div>
                         <div>
-                            <h4>Teléfono</h4>
+                            <h4>TELÉFONO</h4>
                             <p>+34 910 123 456 (general)<br>+34 910 123 457 (soporte 24/7)</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icono">✉️</div>
                         <div>
-                            <h4>Correo electrónico</h4>
+                            <h4>CORREO ELECTRÓNICO</h4>
                             <p>hola@geoscorp.es<br>soporte@geoscorp.es</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <div class="info-icono">🌐</div>
                         <div>
-                            <h4>Redes sociales</h4>
+                            <h4>REDES SOCIALES</h4>
                             <p>@geoscorp en LinkedIn, Twitter y GitHub</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- SEDES — FLEX column -->
+<!-- Nuestras oficiinas.-->
                 <div class="sedes-section">
-                    <h3>Nuestras oficinas</h3>
+                    <h3>NUESTRAS OFICINAS</h3>
                     <div class="sedes-flex">
                         <div class="sede">
                             <div class="sede-info">
                                 <h5>🇪🇸 Madrid</h5>
                                 <p>C/ Innovación Tecnológica, 42 · 28045</p>
                             </div>
-                            <span class="sede-badge">HQ</span>
                         </div>
                         <div class="sede">
                             <div class="sede-info">
                                 <h5>🇵🇹 Lisboa</h5>
                                 <p>Av. da Liberdade, 120 · 1250-145</p>
                             </div>
-                            <span class="sede-badge">EU</span>
                         </div>
                         <div class="sede">
                             <div class="sede-info">
                                 <h5>🇩🇪 Berlín</h5>
                                 <p>Unter den Linden 77 · 10117</p>
                             </div>
-                            <span class="sede-badge">EU</span>
                         </div>
                         <div class="sede">
                             <div class="sede-info">
                                 <h5>🇸🇬 Singapur</h5>
-                                <p>One Raffles Place, #20-61 · 048616</p>
+                                <p>One Raffles Place · 048616</p>
+                                </div>
                             </div>
-                            <span class="sede-badge">APAC</span>
-                        </div>
-                    </div>
-                </div>
 
             </aside>
 
-            <!-- COLUMNA DERECHA: Formulario -->
-            <div class="form-bloque">
-                <h2>Envíanos un mensaje</h2>
-                <p>Nos ponemos en contacto en menos de 24 horas laborables. Para urgencias, llama al +34 910 123 457.</p>
-
-                <form action="#" method="post">
-
-                    <div class="form-fila">
-                        <div class="campo">
-                            <label for="nombre">Nombre *</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="campo">
-                            <label for="apellidos">Apellidos *</label>
-                            <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
-                        </div>
-                    </div>
-
-                    <div class="form-fila">
-                        <div class="campo">
-                            <label for="email">Correo electrónico *</label>
-                            <input type="email" id="email" name="email" placeholder="tu@empresa.com" required>
-                        </div>
-                        <div class="campo">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
-                        </div>
-                    </div>
-
-                    <div class="campo">
-                        <label for="empresa">Empresa</label>
-                        <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
-                    </div>
-
-                    <div class="campo">
-                        <label for="servicio">Servicio de interés *</label>
-                        <select id="servicio" name="servicio" required>
-                            <option value="" disabled selected>Selecciona un servicio...</option>
-                            <option value="cloud">Cloud Infrastructure y DevOps</option>
-                            <option value="ia">Inteligencia Artificial y ML</option>
-                            <option value="cyber">Ciberseguridad Enterprise</option>
-                            <option value="data">Data Engineering y Analytics</option>
-                            <option value="dev">Desarrollo de Software a Medida</option>
-                            <option value="consulting">Consultoría Tecnológica</option>
-                            <option value="otro">Otro / No lo sé aún</option>
-                        </select>
-                    </div>
-
-                    <div class="campo">
-                        <label for="presupuesto">Presupuesto estimado</label>
-                        <select id="presupuesto" name="presupuesto">
-                            <option value="" disabled selected>Rango de inversión...</option>
-                            <option value="5k">Menos de 5.000 €</option>
-                            <option value="15k">5.000 € – 15.000 €</option>
-                            <option value="50k">15.000 € – 50.000 €</option>
-                            <option value="150k">50.000 € – 150.000 €</option>
-                            <option value="enterprise">Más de 150.000 € (Enterprise)</option>
-                        </select>
-                    </div>
-
-                    <div class="campo">
-                        <label for="mensaje">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos tu proyecto, reto o pregunta. Cuanto más detalle compartas, mejor podremos ayudarte." required></textarea>
-                    </div>
-
-                    <div class="campo-check">
-                        <input type="checkbox" id="privacidad" name="privacidad" required>
-                        <span>He leído y acepto la <a href="#">Política de Privacidad</a> y autorizo el tratamiento de mis datos para gestionar esta solicitud.</span>
-                    </div>
-
-                    <button type="submit" class="btn btn-cyan btn-form">Enviar mensaje</button>
-
-                    <p class="form-nota">🔒 Tus datos están seguros y nunca serán compartidos con terceros.</p>
-
-                </form>
-            </div>
-
-        </div>
-
-        <!-- HORARIOS — FLEX -->
+<!-- Horarios.-->
         <section class="horarios-section">
-            <span class="etiqueta">// Horarios de atención</span>
+            <span class="etiqueta">// HORARIOS DE ATENCIÓN</span>
             <h2>Cuándo puedes contactarnos</h2>
             <p>Atención personalizada en todos nuestros horarios de oficina.</p>
 
@@ -220,36 +131,33 @@
             </div>
         </section>
 
-        <!-- MAPA — FLEX centrado -->
+<!-- Mapa.-->
         <section class="mapa-section">
             <span class="etiqueta">// Ubicación</span>
             <h2>Sede central en Madrid</h2>
-            <div class="mapa-placeholder">
-                <div class="mapa-pin">📍</div>
-                <p class="mapa-label">Geo's Corp HQ · C/ Innovación Tecnológica, 42 · Madrid, España</p>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.47968035535!2d-3.8446881895360248!3d40.438098122452004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1772019630424!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-        <!-- FAQ — GRID -->
-        <section class="faq-section">
+<!-- Preguntas.-->
+        <section class="preguntas-section">
             <span class="etiqueta">// FAQ</span>
             <h2>Preguntas frecuentes</h2>
             <p>Resolvemos las dudas más comunes antes de que llegues a preguntarlas.</p>
 
-            <div class="faq-grid">
-                <div class="faq-carta">
+            <div class="preguntas-grid">
+                <div class="preguntas-carta">
                     <h4>¿Cuánto tarda en arrancar un proyecto?</h4>
                     <p>Normalmente podemos iniciar en 1-2 semanas tras la firma. El proceso de discovery puede hacerse en paralelo sin coste adicional.</p>
                 </div>
-                <div class="faq-carta">
+                <div class="preguntas-carta">
                     <h4>¿Trabajáis con startups o solo grandes empresas?</h4>
                     <p>Con todo tipo de organizaciones, desde startups en fase seed hasta multinacionales. Adaptamos el equipo y la metodología a cada contexto.</p>
                 </div>
-                <div class="faq-carta">
+                <div class="preguntas-carta">
                     <h4>¿Podéis haceros cargo de proyectos ya iniciados?</h4>
                     <p>Sí. Realizamos una auditoría técnica inicial para entender el estado y presentamos un plan de continuación o rescate sin coste adicional.</p>
                 </div>
-                <div class="faq-carta">
+                <div class="preguntas-carta">
                     <h4>¿Cuál es vuestra modalidad de contratación?</h4>
                     <p>Ofrecemos proyectos a precio cerrado, bolsas de horas y retainers mensuales. Elegimos la modalidad que mejor se adapte a tu situación.</p>
                 </div>
@@ -258,14 +166,14 @@
 
     </main>
 
-    <!-- FOOTER -->
+<!-- FOOTER -->
     <footer>
         <div class="footer-grid">
             <div class="footer-marca">
-                <span class="logo">Geo's<span>.</span>Corp</span>
+                <span class="logo">Geo's<span class="cyan">.</span>Corp</span>
                 <p>Start-up tecnológica especializada en soluciones cloud, IA y ciberseguridad para empresas en crecimiento.</p>
             </div>
-            <div class="footer-col">
+            <div class="footer-1">
                 <h4>Empresa</h4>
                 <ul>
                     <li><a href="empresa.html">Sobre nosotros</a></li>
@@ -274,7 +182,7 @@
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-1">
                 <h4>Servicios</h4>
                 <ul>
                     <li><a href="servicios.html">Cloud Solutions</a></li>
@@ -283,17 +191,17 @@
                     <li><a href="servicios.html">Data Analytics</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-1">
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="#">Privacidad</a></li>
-                    <li><a href="#">Términos</a></li>
-                    <li><a href="#">Cookies</a></li>
+                    <li><a href="">Privacidad</a></li>
+                    <li><a href="">Términos</a></li>
+                    <li><a href="">Cookies</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-copyright">
             <span>&copy; 2025 Geo's Corp. Todos los derechos reservados.</span>
             <span>Madrid, España</span>
         </div>
