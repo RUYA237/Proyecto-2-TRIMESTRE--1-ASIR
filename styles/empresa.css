@@ -162,7 +162,6 @@
 
 .miembro-carta:hover {
     border-color: var(--cyan);
-    transform: translateY(-20px);
 }
 
 .miembro-avatar {
