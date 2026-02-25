@@ -160,10 +160,6 @@
     overflow: hidden;
 }
 
-.miembro-carta:hover {
-    border-color: var(--cyan);
-}
-
 .miembro-avatar {
     background-color: var(--fondo);
     padding: 2rem 0;
@@ -183,15 +179,15 @@
 }
 
 .miembro-cargo {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--cyan);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .miembro-info p {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     color: var(--texto-p);
-    line-height: 1.5;
+    margin-top: 0.7rem;
 }
 
 /* Historia.*/
