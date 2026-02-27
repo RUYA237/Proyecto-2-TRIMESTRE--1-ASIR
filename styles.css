@@ -113,7 +113,6 @@ footer {
     align-items: center;
     color: var(--texto-p);
     font-size: 0.8rem;
-    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
@@ -137,8 +136,8 @@ footer {
     border: 2px solid var(--cyan);
 }
 
-/* Hero.*/
-.hero {
+/* Inicio.*/
+.inicio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -148,38 +147,37 @@ footer {
     padding: 4rem 2rem 3rem;
 }
 
-.hero h1 {
+.inicio h1 {
     font-size: 2.6rem;
     font-weight: 700;
-    line-height: 1.1;
     margin-bottom: 1rem;
 }
 
-.hero h1 span {
+.inicio h1 span {
     color: var(--cyan);
 }
 
-.hero p {
+.inicio p {
     color: var(--texto-p);
     font-size: 1rem;
     line-height: 1.75;
     margin-bottom: 1rem;
 }
 
-.hero-acciones {
+.inicio-acciones {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.hero-stats-p {
+.inicio-stats-p {
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
 } 
 
-.hero-tarjetas {
+.inicio-tarjetas {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
