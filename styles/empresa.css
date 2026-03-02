@@ -243,3 +243,38 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 1024px) {
+    .container, .wrapper {
+        width: 90%;
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-layout, .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
