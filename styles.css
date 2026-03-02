@@ -178,8 +178,8 @@ footer {
 } 
 
 .inicio-tarjetas {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 3rem;
     padding: 15px;
