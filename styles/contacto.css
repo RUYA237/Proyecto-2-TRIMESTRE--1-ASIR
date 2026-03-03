@@ -1,3 +1,10 @@
+.main {
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .contacto-header {
     max-width: 1100px;
     margin: 0 auto;
@@ -14,13 +21,6 @@
     color: var(--texto-p);
     font-size: 1rem;
     max-width: 540px;
-}
-
-.contacto-grid {
-    gap: 2.5rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
 }
 
 /* Info.*/
