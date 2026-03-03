@@ -99,14 +99,9 @@
     padding: 1.25rem;
 }
 
-.valor-carta:hover {
-    border-color: var(--cyan);
-}
-
 .valor-icono {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    display: block;
 }
 
 .valor-carta h4 {
@@ -144,9 +139,9 @@
     max-width: 560px;
 }
 
-.equipo-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.equipo-flex {
+    display: flex;
+    flex-direction: row;
     gap: 1.25rem;
 }
 
