@@ -9,13 +9,7 @@
 
 .servicios-intro h1 {
     font-size: 2.6rem;
-    font-weight: 700;
-    line-height: 1.15;
     margin-bottom: 1rem;
-}
-
-.servicios-intro h1 span {
-    color: var(--cyan);
 }
 
 .servicios-intro p {
@@ -59,16 +53,16 @@
     
 }
 
-.seccion-cabecera {
+.catalogo {
     margin-bottom: 2rem;
 }
 
-.seccion-cabecera h2 {
+.catalogo h2 {
     font-size: 1.9rem;
     margin-bottom: 0.5rem;
 }
 
-.seccion-cabecera p {
+.catalogo p {
     color: var(--texto-p);
     max-width: 580px;
 }
