@@ -58,7 +58,7 @@
 }
 
 .catalogo h2 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -83,7 +83,6 @@
 .servicio-num {
     font-size: 1rem;
     color: var(--cyan);
-    letter-spacing: 0.2rem;
     font-weight: 600;
 }
 
@@ -96,18 +95,14 @@
 
 .servicio-carta p {
     color: var(--texto-p);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
-.servicio-lista {
-    padding-top: 1rem;
-}
-
 .servicio-lista li {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--texto-p);
-    padding: 0.4rem;
+    padding: 0.5rem;
     border-bottom: 1px solid var(--borde);
 }
 
