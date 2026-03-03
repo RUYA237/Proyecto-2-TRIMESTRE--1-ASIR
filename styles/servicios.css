@@ -166,19 +166,19 @@
 .tech-section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    margin-top: 0.6rem;
+    margin-top: 0.5rem;
 }
 
 .tech-flex {
     display: flex;
-    gap: 0.6rem;
+    gap: 0.5rem;
 }
 
 .tech-chip {
     background-color: var(--tarjeta);
     border: 1px solid var(--borde);
     border-radius: var(--radio);
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 0.8rem;
     color: var(--texto-p);
 }
