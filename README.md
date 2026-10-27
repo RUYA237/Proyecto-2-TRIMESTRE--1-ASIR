@@ -36,9 +36,9 @@ La web de presentación de una empresa de servicios IT: portada con propuesta de
 └── styles/               # Estilos por página
 ```
 
-## 🚀 Verla
+## 🚀 Como Verla
 
-Clona el repo y abre `index.html`, o actívalo con **GitHub Pages** (rama `main`, carpeta raíz).
+Clona el repositorio y abre `index.html`, o actívalo con **GitHub Pages** (rama `main`, carpeta raíz).
 
 ---
 
